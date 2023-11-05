@@ -1,0 +1,25 @@
+@import './variables/variables';
+
+
+
+html {
+    /* 62.5% of 16px browser font size is 10px */
+    font-size: 62.5%;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: $secondary_color;
+    color:  $white_color;
+    font-family: $main_font;
+}
+
+li{
+    list-style-type: none;
+}
