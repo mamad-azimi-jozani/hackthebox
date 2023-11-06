@@ -1,0 +1,60 @@
+@import '../variables/variables';
+@import '../variables/mixins';
+
+
+.hero{
+    height: 900px;
+    border: 2px solid red;
+    margin-top: $sizing_xlg;
+    display: grid;
+    grid-template-rows: 2.5fr 3fr;
+
+    .heroContent{
+        // border: 2px solid blueviolet;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        .heroContentTop{
+            @include flex-row;
+            justify-content: space-between;
+            gap: $sizing_md;
+            border-radius: 16px;
+            background-color: #1a2332!important;
+            padding: $sizing_sm $sizing_md;
+            span{
+                border-radius: 16px;
+                background: #9fef00;
+                text-transform: uppercase;
+                color: #141d2b;
+                font-weight: bold;
+                font-size: 10px;
+                padding: 6px 9px;
+                // opacity: 0.6;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+
+
+        }
+
+        .heroContentMiddle{
+            // border: 1px solid red;
+            font-size: 6rem;
+            max-width: 55%;
+            text-align: center;
+            margin-top: $sizing_md;
+        }
+        .heroContentBottom{
+            color: #a4b1cd;
+            line-height: 30px;
+            font-size: 2.2rem;
+            text-align: center;
+            max-width: 70%;
+        }
+    }
+    .imgContent{
+        border: 2px solid rgb(43, 226, 217);
+    }
+}
